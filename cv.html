@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset='UTF-8'/>
+    <meta name="Author" content="胡君君">
+    <meta name="Keywords" content="简历">
+    <meta name="Description" content="h5静态简历">
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_9ejm83c0nfm9529.css">
+    <title>CV</title>
+    <style>
+        *{
+          margin: 0;
+          padding: 0;
+          }
+        body{
+          background-color: #ddd;
+          font: 14px/150% Microsoft YaHei;
+          color: #666;
+          }
+        ul li{
+          list-style: none;
+        }
+        .clearfix:before, .clearfix:after {
+            content: "";
+            display: table;
+        }
+
+        .clearfix:after {
+            clear: both;
+        }
+
+        .clearfix {
+            *zoom: 1; /*IE/7/6*/
+        }
+        .cv {
+            width: 850px;
+            height: 1000px;
+            margin: 50px auto;
+            background-color: #fff;
+            box-shadow: 0 0 8px 2px #CCC;
+            padding-right: 30px;
+          }
+        .introduce{
+            float: left;
+            width: 280px;
+            height: 1000px;
+            background-color: #595758;
+            color: #fff;
+          }
+        .introduce .img{
+            height: 300px;
+          }
+        .portrait{
+            height: 155px;
+            padding: 45px 0 0 45px;
+        }
+        .logo{
+            width: 130px;
+            height: 130px;
+            border: 10px solid #fff;
+            border-radius: 50%;
+        }
+        .introduce .name{
+            height: 100px;
+            text-align: center;
+        }
+        .name_1{
+            font: 400 26px/50px Microsoft YaHei;
+            margin-bottom: 5px;
+        }
+        .introduce li{
+            padding-left: 15px ;
+            margin-bottom: 20px;
+        }
+        .introduce .tlt {
+            padding-left: 16px;
+        }
+        .subtlt{
+            position: relative;
+            width: 260px;
+            height: 36px;
+            background-color: #00A1E9;
+            font: 600 16px/36px Microsoft YaHei;
+            margin-bottom: 20px;
+          }
+        .subtlt::before{
+            position: absolute;
+            left: -17px;
+            content: '';
+            width: 0;
+            height: 0;
+            border: 18px solid transparent;
+            border-right-color:  #00A1E9;
+            border-left: none;
+         }
+        .subtlt::after{
+            position: absolute;
+            right: 1px;
+            top: 36px;
+            content: '';
+            width: 0;
+            height: 0;
+            border: 11px solid transparent;
+            border-top-color: #0978AF;
+            border-left: none;
+         }
+        .introduce .text{
+            padding-left: 6px;
+        }
+        .introduce .text p{
+            line-height: 30px;
+            font-size: 14px;
+            white-space:nowrap;
+        }
+        .introduce .text p span{
+            display: inline-block;
+            width: 60px;
+            font-weight: bold;
+        }
+        .details{
+            float: right;
+            width: 500px;
+            height: 1000px;
+            padding-top: 45px;
+            color: #2B2A26;
+        }
+        .details li{
+            margin-bottom: 20px;
+        }
+        .details .tlt{
+            height: 60px;
+            border-bottom: 2px solid #2B2A26;
+            background-color: #fff;
+            font: 700 26px/50px Microsoft YaHei;
+        }
+        .iconfont{
+            font-size: 50px;
+            color:  #00A1E9;
+            vertical-align: middle;
+        }
+        .details .p-text{
+            width: 500px;
+            margin: 10px 0 ;
+        }
+        .details dt,
+        .width_span{
+            padding-top: 10px;
+            height: 40px;
+            font: 700 18px/40px Microsoft YaHei;
+        }
+        .details .width,
+        .width_span{
+            float: left;
+            width: 130px;
+        }
+        .details dd .width{
+            color: #00A1E9;
+            font-weight: bold;
+        }
+        .details  p{
+            width: 350px;
+            float: left;
+        }
+        meter{
+            height: 15px;
+            width: 120px;
+            background: #00A1E9;
+        }
+        .introduce .img span{
+            position: relative;
+        }
+        .introduce .icon-fox{
+            font-size: 120px;
+            position: relative;
+        }
+        .icon-fox:before{
+            position: absolute;
+            top: 50px;
+            left: -5px;
+
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    <div class="cv">
+        <div class="introduce">
+            <div class="img">
+                <div class="portrait">
+                    <div class="logo iconfont icon-fox">
+
+                    </div>
+                </div>
+                <div class="name">
+                    <p class="name_1">胡君君</p>
+                    <p>web前端</p>
+                </div>
+            </div>
+            <ul>
+                <li>
+                    <div class="tlt">
+                        <div class="subtlt">
+                            简介
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p><span>生日&nbsp;:</span>1990年6月</p>
+                        <p><span>学校&nbsp;:</span>济南大学</p>
+                        <p><span>学历&nbsp;:</span>本科</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="tlt">
+                        <div class="subtlt">
+                            求职意向
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p>前端相关实习工作</p>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="tlt">
+                        <div class="subtlt">
+                            联系方式
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p><span>手机&nbsp;:</span>15895937497</p>
+                        <p><span>QQ&nbsp;:</span>1489171121</p>
+                        <p><span>邮箱&nbsp;:</span>hujunjun616@163.com</p>
+                        <p><span>博客&nbsp;:</span>www.cnblogs.com/MeeMee</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="tlt">
+                        <div class="subtlt">
+                            掌握技能
+                        </div>
+                    </div>
+                    <div class="text">
+                        <p>
+                            <span>div+css&nbsp;:</span>
+                            <meter min='0' max='100' low='10'  value='95'></meter>
+                            </p>
+                        <p>
+                            <span>h5+css3&nbsp;:</span>
+                            <meter min='0' max='100' low='10' high='90' value='90'></meter>
+                        </p>
+                        <p>
+                            <span>js&nbsp;:</span>
+                            <meter min='0' max='100' low='10' high='90' value='80'></meter>
+                        </p>
+                        <p>
+                            <span>iQuery&nbsp;:</span>
+                            <meter min='0' max='100' low='10' high='90' value='70'></meter>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="details">
+            <ul>
+                <li class="clearfix">
+                    <div class="tlt">
+                        <i class="iconfont icon-icon168"></i>
+                        自我评价
+                    </div>
+                    <p class="p-text">
+                        毕业于济南大学汉语言文学专业，毕业后从事文职相关工作。<br>
+                        后期工作中对接技术工种，逐渐对编程产生浓厚兴趣。 <br>
+                        2017年年初至今自学前端相关技术，目前属于页面仔阶段。 <br>
+                        个人可以完成静态页面。懂html/css,了解h5和css3新属性。js入门<br>
+                        本人吃苦耐劳，强大的抗压能力和自学能力。<br>
+                    </p>
+                </li>
+                <li class="clearfix">
+                    <div class="tlt">
+                        <i class="iconfont icon-jiaoyupeixun"></i>
+                        教育/培训经历
+                    </div>
+                    <dl class="clearfix">
+                        <dt>
+                            <span class="width">2008-2012</span>
+                            济南大学
+                        </dt>
+                        <dd class="clearfix">
+                            <span class="width">中文专业</span>
+                            <p>汉语言文学相关内容</p>
+                        </dd>
+                    </dl>
+                    <dl >
+                        <dt>
+                            <span class="width">2017-今</span>
+                            自学
+                        </dt>
+                        <dd>
+                            <span class="width">web前端</span>
+                            <p>html/css <br>
+                                javascript<br>
+                                h5+css3<br>
+                                jQuery
+                            </p>
+                        </dd>
+                    </dl>
+                </li>
+                <li class="clearfix">
+                <div class="tlt">
+                    <i class="iconfont icon-iconfontgongzuo"></i>
+                    工作经历
+                </div>
+                <dl>
+                    <dt>
+                        <span class="width">2012-2014</span>
+                        南京世联行
+                    </dt>
+                    <dd  class="clearfix">
+                        <span class="width">行政人事</span>
+                        <p>对接集团总部各项行政事务、南京公司行政费用预算及管控、公司固定资产采买及管理、项目宿舍租赁及管理、公司文档合同管理、领导委派的其他任务。</p>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <span class="width">2015-2016</span>
+                        南京八天在线
+                    </dt>
+                    <dd>
+                        <span class="width">人事专员</span>
+                        <p>招聘工作
+                            薪酬核算
+                            员工关系等
+                        </p>
+                    </dd>
+                </dl>
+            </li>
+            <li class="clearfix">
+                    <div class="tlt">
+                        <i class="iconfont icon-shape"></i>
+                        相关证书
+                    </div>
+                    <span class="width_span">英语4级</span>
+                    <span class="width_span">驾照C1</span>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+</html>
